@@ -1,0 +1,7 @@
+<form action="" method="post">{% csrf_token %}
+    <h1> Set the cache limit </h1>
+    {{ form }}
+    <input type="submit" value="submit">
+    {% if string %}{{ string }}{% else %} After clicking on submit, data will be cached and status will be updated with the cache limit{% endif %}
+</form>
+

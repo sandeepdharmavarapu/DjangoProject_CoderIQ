@@ -1,0 +1,3 @@
+websocket-client
+websocket
+django-cors-headers
