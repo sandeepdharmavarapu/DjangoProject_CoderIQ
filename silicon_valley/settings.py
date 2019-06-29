@@ -58,7 +58,7 @@ ROOT_URLCONF = 'silicon_valley.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -70,6 +70,11 @@ TEMPLATES = [
         },
     },
 ]
+
+
+# TEMPLATE_DIRS = (
+#     os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'templates/'),
+# )
 
 WSGI_APPLICATION = 'silicon_valley.wsgi.application'
 
